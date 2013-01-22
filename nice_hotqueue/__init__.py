@@ -22,3 +22,8 @@ class NiceHotQueue(object):
     def backOffABit(self):
         """Sleep for 3 seconds."""
         time.sleep(3)
+
+    @property
+    def _HotQueue__redis(self):
+        """Mimic a HotQueue internally."""
+        return self.queue._HotQueue__redis
