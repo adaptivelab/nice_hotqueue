@@ -1,4 +1,8 @@
+import os
 from distutils.core import setup
+
+def read(fname):
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
     name='nice_hotqueue',
@@ -10,6 +14,6 @@ setup(
     url='https://github.com/adaptivelab/nice_hotqueue',
     license='LICENSE.txt',
     description='Wrapper around HotQueue that sleeps if the queue is too full.',
-    long_description=open('README.txt').read(),
+    long_description=read('README.txt'),
     install_requires=[],
 )
