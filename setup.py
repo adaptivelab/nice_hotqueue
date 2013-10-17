@@ -15,5 +15,7 @@ setup(
     license='LICENSE.txt',
     description='Wrapper around HotQueue that sleeps if the queue is too full.',
     long_description=read('README.txt'),
-    install_requires=[],
+    install_requires=[
+        'hotqueue==0.2.7'
+    ],
 )
