@@ -6,7 +6,7 @@ def read(fname):
 
 setup(
     name='nice_hotqueue',
-    version='0.0.1',
+    version='0.1.0',
     author='Ben Jackson',
     author_email='ben@adaptivelab.co.uk',
     packages=['nice_hotqueue', 'nice_hotqueue.test'],
